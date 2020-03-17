@@ -1,0 +1,1 @@
+2020-03-17.10:24:57 INFO  [main] com.soft1851.spring.ioc.app.StudentTest.main:20  Student{id=1, name='侯粤嘉', hobbits=[篮球, 台球, 郭瑞昌], phones=[Phone{brand='iphoneX', price=8888.0}, Phone{brand='iphoneXS', price=8888.0}]}
