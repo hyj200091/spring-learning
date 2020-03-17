@@ -2,5 +2,21 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    Phone中没有给set 和get方法时-->
+    <bean id="phone" class="com.soft1851.spring.ioc.entity.Phone">
+        <constructor-arg name="brand" value="iPhone11"/>
+        <constructor-arg name="price" value="9999.99"/>
+    </bean>
+    <!--    Phone中给set和get方法时-->
+    <bean id="phone1" class="com.soft1851.spring.ioc.entity.Phone">
+        <property name="brand" value="iPhoneX"/>
+        <property name="price" value="8888.8"/>
+    </bean>
+
+    <bean id="student" class="com.soft1851.spring.ioc.entity.Student">
+        <property name="name" value="侯粤嘉"/>
+        <property name="phone" ref="phone"/>
+    </bean>
+
     <bean id="hello" class="com.soft1851.spring.ioc.entity.Hello"/>
 </beans>

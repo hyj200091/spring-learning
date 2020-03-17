@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7ae43b9-f242-4405-9ccf-261688bfcb7f" name="Default Changelist" comment="" />
+    <list default="true" id="d7ae43b9-f242-4405-9ccf-261688bfcb7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ioc/src/main/java/com/soft1851/spring/ioc/entity/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ioc/src/main/java/com/soft1851/spring/ioc/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ioc/src/test/java/com/soft1851/spring/ioc/entity/PhoneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ioc/src/main/java/com/soft1851/spring/ioc/entity/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ioc/src/main/java/com/soft1851/spring/ioc/entity/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ioc/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Ioc/src/main/resources/beans.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,6 +45,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZEVwTM15jMvGJgHGgaOehDGIM5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -41,6 +53,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -59,7 +72,7 @@
       <recent name="D:\dev\SpringStudy\spring-learning\Ioc\src\main\java\com\soft1851\spring\ioc\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HelloTest.test">
+  <component name="RunManager" selected="JUnit.StudentTest.test">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.ioc.App" />
       <module name="Ioc" />
@@ -89,8 +102,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhoneTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.spring.ioc.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soft1851.spring.ioc.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.ioc.entity.PhoneTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.spring.ioc.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soft1851.spring.ioc.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.ioc.entity.StudentTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentTest.test" />
+        <item itemvalue="JUnit.PhoneTest.test" />
         <item itemvalue="JUnit.HelloTest.test" />
         <item itemvalue="Application.App" />
       </list>
@@ -118,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584404480149</updated>
-      <workItem from="1584404487106" duration="1964000" />
+      <workItem from="1584404487106" duration="2769000" />
     </task>
     <servers />
   </component>
@@ -130,26 +177,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="741" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584404645046" />
-    <state width="1237" height="316" key="GridCell.Tab.0.bottom" timestamp="1584406505287">
+    <state width="1237" height="316" key="GridCell.Tab.0.bottom" timestamp="1584407439049">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="316" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584406505287" />
-    <state width="1237" height="316" key="GridCell.Tab.0.center" timestamp="1584406505287">
+    <state width="1237" height="316" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584407439049" />
+    <state width="1237" height="316" key="GridCell.Tab.0.center" timestamp="1584407439049">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="316" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584406505287" />
-    <state width="1237" height="316" key="GridCell.Tab.0.left" timestamp="1584406505286">
+    <state width="1237" height="316" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584407439049" />
+    <state width="1237" height="316" key="GridCell.Tab.0.left" timestamp="1584407439049">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="316" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584406505286" />
-    <state width="1237" height="316" key="GridCell.Tab.0.right" timestamp="1584406505287">
+    <state width="1237" height="316" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584407439049" />
+    <state width="1237" height="316" key="GridCell.Tab.0.right" timestamp="1584407439049">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="316" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584406505287" />
-    <state x="724" y="44" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584405983202">
+    <state width="1237" height="316" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584407439049" />
+    <state x="621" y="65" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584407342864">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="724" y="44" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1584405983202" />
+    <state x="621" y="65" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1584407342864" />
     <state x="509" y="37" width="737" height="609" key="new project wizard" timestamp="1584404874461">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
