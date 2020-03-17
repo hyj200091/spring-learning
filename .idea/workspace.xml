@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7ae43b9-f242-4405-9ccf-261688bfcb7f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\tool\maven_jar" />
+        <option name="mavenHome" value="D:/tool/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="D:\tool\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZEVwTM15jMvGJgHGgaOehDGIM5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ioc/src/main/java/com/soft1851/spring/ioc/entity" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.soft1851.spring.ioc.entity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\SpringStudy\spring-learning\Ioc\src\main\java\com\soft1851\spring\ioc\entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.HelloTest.test">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.ioc.App" />
+      <module name="Ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.spring.ioc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.spring.ioc.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soft1851.spring.ioc.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.ioc.entity.HelloTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HelloTest.test" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7ae43b9-f242-4405-9ccf-261688bfcb7f" name="Default Changelist" comment="" />
+      <created>1584404480149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584404480149</updated>
+      <workItem from="1584404487106" duration="1964000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="741" y="96" key="FileChooserDialogImpl" timestamp="1584404645046">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="741" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584404645046" />
+    <state width="1237" height="316" key="GridCell.Tab.0.bottom" timestamp="1584406505287">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="316" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584406505287" />
+    <state width="1237" height="316" key="GridCell.Tab.0.center" timestamp="1584406505287">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="316" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584406505287" />
+    <state width="1237" height="316" key="GridCell.Tab.0.left" timestamp="1584406505286">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="316" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584406505286" />
+    <state width="1237" height="316" key="GridCell.Tab.0.right" timestamp="1584406505287">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="316" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584406505287" />
+    <state x="724" y="44" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584405983202">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="724" y="44" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1584405983202" />
+    <state x="509" y="37" width="737" height="609" key="new project wizard" timestamp="1584404874461">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="509" y="37" width="737" height="609" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1584404874461" />
+    <state x="641" y="24" key="spring file set editor" timestamp="1584405640475">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="641" y="24" key="spring file set editor/0.0.1280.680@0.0.1280.680" timestamp="1584405640475" />
+  </component>
+</project>
