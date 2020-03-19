@@ -21,5 +21,10 @@ public class BookTest {
         book.setPrice(99.9);
         System.out.println(book);
 
+//        Phone phone = (Phone) ctx.getBean("phone");
+//        phone.setBrand("IphoneX");
+//        phone.setPrice(8888.8);
+//        System.out.println(phone);
+
     }
 }

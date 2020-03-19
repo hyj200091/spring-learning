@@ -1,9 +1,12 @@
 package com.soft1851.spring.ioc.app;
+
+import com.soft1851.spring.ioc.config.AppConfig;
+import com.soft1851.spring.ioc.entity.Phone;
 import com.soft1851.spring.ioc.entity.Student;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author hyj
@@ -11,13 +14,28 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Description
  */
 public class StudentTest {
-    private static Logger logger = LoggerFactory.getLogger(StudentTest.class);
-
     public static void main(String[] args) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
-        Student student = (Student) ac.getBean("student");
+        //生成基于注解配置的引用上下文对象
+        AnnotationConfigApplicationContext act = new AnnotationConfigApplicationContext(AppConfig.class);
+        //更新
+        //act.refresh();
+        Phone  phone = (Phone) act.getBean("phone");
+        phone.setBrand("IphoneXS");
+        phone.setPrice(9999.9);
+        System.out.println(phone);
+        Student student = (Student) act.getBean("student");
+        List<String> hobbitsList = new ArrayList<>();
+        List<Phone> phonesList = new ArrayList<>();
+        Phone  phone1 = (Phone) act.getBean("phone");
+        phone1.setBrand("IphoneXS");
+        phone1.setPrice(9999.9);
+        hobbitsList.add("篮球");
+        hobbitsList.add("台球");
+        student.setHobbits(hobbitsList);
+        phonesList.add(phone1);
+        student.setId(1);
+        student.setName("hyj");
+        student.setPhones(phonesList);
         System.out.println(student);
-        logger.info(student.toString());
-
     }
 }

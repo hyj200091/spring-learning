@@ -1,54 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--    Phone中没有给set 和get方法时-->
-    <bean id="phone" class="com.soft1851.spring.ioc.entity.Phone">
-        <constructor-arg name="brand" value="iPhone11"/>
-        <constructor-arg name="price" value="9999.99"/>
-    </bean>
-    <!--    Phone中给set和get方法时-->
-    <bean id="phone1" class="com.soft1851.spring.ioc.entity.Phone">
-        <property name="brand" value="iPhoneX"/>
-        <property name="price" value="8888.8"/>
-    </bean>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+<!--    &lt;!&ndash;    Phone中没有给set 和get方法时&ndash;&gt;-->
+<!--    <bean id="phone" class="com.soft1851.spring.ioc.entity.Phone">-->
+<!--        <constructor-arg name="brand" value="iPhone11"/>-->
+<!--        <constructor-arg name="price" value="9999.99"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash;    Phone中给set和get方法时&ndash;&gt;-->
+<!--    <bean id="phone1" class="com.soft1851.spring.ioc.entity.Phone">-->
+<!--        <property name="brand" value="iPhoneX"/>-->
+<!--        <property name="price" value="8888.8"/>-->
+<!--    </bean>-->
 
-    <bean id="phone2" class="com.soft1851.spring.ioc.entity.Phone" p:price="8888"
-            p:brand="iphoneX"/>
-    <bean id="phone3" class="com.soft1851.spring.ioc.entity.Phone" p:price="8888"
-          p:brand="iphoneXS"/>
-    <bean id="student" class="com.soft1851.spring.ioc.entity.Student">
-        <property name="id" value="001"/>
-        <property name="name" value="侯粤嘉"/>
-        <property name="hobbits">
-            <list>
-                <value>篮球</value>
-                <value>台球</value>
-                <value>郭瑞昌</value>
-            </list>
-        </property>
-        <property name="phones">
-            <list>
-                <ref bean="phone2"></ref>
-                <ref bean="phone3"></ref>
-            </list>
-        </property>
-    </bean>
+<!--    <bean id="phone2" class="com.soft1851.spring.ioc.entity.Phone" p:price="8888"-->
+<!--            p:brand="iphoneX"/>-->
+<!--    <bean id="phone3" class="com.soft1851.spring.ioc.entity.Phone" p:price="8888"-->
+<!--          p:brand="iphoneXS"/>-->
+<!--    <bean id="student" class="com.soft1851.spring.ioc.entity.Student">-->
+<!--        <property name="id" value="001"/>-->
+<!--        <property name="name" value="侯粤嘉"/>-->
+<!--        <property name="hobbits">-->
+<!--            <list>-->
+<!--                <value>篮球</value>-->
+<!--                <value>台球</value>-->
+<!--                <value>郭瑞昌</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="phones">-->
+<!--            <list>-->
+<!--                <ref bean="phone2"></ref>-->
+<!--                <ref bean="phone3"></ref>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
 
 <!--    <property name="set">-->
 <!--        <set>-->
-<!--            <value>cccc</value>-->
-<!--            <value>dddd</value>-->
+<!--            <value>侯粤嘉</value>-->
+<!--            <value>黄晶</value>-->
 <!--        </set>-->
 <!--    </property>-->
 
 <!--    <property name="map">-->
 <!--        <map>-->
-<!--            <entry key="1111" value="aaaa"/>-->
-<!--            <entry key="2222" value="bbbb"/>-->
+<!--            <entry key="1" value="hyj"/>-->
+<!--            <entry key="2" value="hj"/>-->
 <!--        </map>-->
 <!--    </property>-->
 
 
-    <bean id="hello" class="com.soft1851.spring.ioc.entity.Hello"/>
-</beans>
+<!--    <bean id="hello" class="com.soft1851.spring.ioc.entity.Hello"/>-->
+<!--</beans>-->
