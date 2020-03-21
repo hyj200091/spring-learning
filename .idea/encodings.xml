@@ -3,10 +3,10 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/Ioc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Ioc/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/aop/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/aop/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
