@@ -4,56 +4,56 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <display-name>web</display-name>
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
+<!--&lt;!&ndash;&lt;!&ndash;    <display-name>web</display-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <welcome-file-list>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <welcome-file>index.jsp</welcome-file>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </welcome-file-list>&ndash;&gt;&ndash;&gt;-->
 
-    <!--    监听器配置，当tomcat启动，加载web.xml配置文件，即web容器-->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
+<!--&lt;!&ndash;&lt;!&ndash;    &lt;!&ndash;    监听器配置，当tomcat启动，加载web.xml配置文件，即web容器&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <listener>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </listener>&ndash;&gt;&ndash;&gt;-->
 
-    <!--    上下文初始化，监听到服务器启动，加载applicationContext.xml配置文件，即spring容器-->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:applicationContext.xml</param-value>
-    </context-param>
+<!--&lt;!&ndash;&lt;!&ndash;    &lt;!&ndash;    上下文初始化，监听到服务器启动，加载applicationContext.xml配置文件，即spring容器&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <context-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <param-name>contextConfigLocation</param-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <param-value>classpath:applicationContext.xml</param-value>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </context-param>&ndash;&gt;&ndash;&gt;-->
 
-    <!--    配置解决中文乱码过滤器-->
-    <filter>
-        <filter-name>encoding-filter</filter-name>
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>UTF8</param-value>
-        </init-param>
-        <init-param>
-            <param-name>forceEncoding</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
+<!--&lt;!&ndash;&lt;!&ndash;    &lt;!&ndash;    配置解决中文乱码过滤器&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <filter>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <filter-name>encoding-filter</filter-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <init-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <param-name>encoding</param-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <param-value>UTF8</param-value>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        </init-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <init-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <param-name>forceEncoding</param-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <param-value>true</param-value>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        </init-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </filter>&ndash;&gt;&ndash;&gt;-->
 
-    <filter-mapping>
-        <filter-name>encoding-filter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+<!--&lt;!&ndash;&lt;!&ndash;    <filter-mapping>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <filter-name>encoding-filter</filter-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <url-pattern>/*</url-pattern>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </filter-mapping>&ndash;&gt;&ndash;&gt;-->
 
-    <!--    控制器配置，当tomcat启动，加载springMVC-servlet.xml控制器配置-->
-    <servlet>
-        <servlet-name>springMVC</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:springMVC-servlet.xml</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
+<!--&lt;!&ndash;&lt;!&ndash;    &lt;!&ndash;    控制器配置，当tomcat启动，加载springMVC-servlet.xml控制器配置&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <servlet>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <servlet-name>springMVC</servlet-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <init-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <param-name>contextConfigLocation</param-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <param-value>classpath:springMVC-servlet.xml</param-value>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        </init-param>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <load-on-startup>1</load-on-startup>&ndash;&gt;&ndash;&gt;-->
 
-    </servlet>
+<!--&lt;!&ndash;&lt;!&ndash;    </servlet>&ndash;&gt;&ndash;&gt;-->
 
-    <!--    mvc控制器映射规则-->
-    <servlet-mapping>
-        <servlet-name>springMVC</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
+<!--&lt;!&ndash;&lt;!&ndash;    &lt;!&ndash;    mvc控制器映射规则&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <servlet-mapping>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <servlet-name>springMVC</servlet-name>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <url-pattern>/</url-pattern>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </servlet-mapping>&ndash;&gt;&ndash;&gt;-->
 </web-app>

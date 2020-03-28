@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
+    <title>哔哩哔哩排行榜数据展示</title>
+</head>
+<style>
+    .container{
+        margin: 0 auto;
+        width: 80%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+    .top{
+        border-radius: 10px;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: #ffffff;
+    }
+    .tiao{
+        border-radius: 10px;
+        width: 100%;
+        height: 25px;
+        background-color: #edf2f9;
+    }
+    .center{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: #edf2f9;
+    }
+    .bottom{
+        margin-top: 3px;
+        display: flex;
+        width: 100%;
+        height: 120px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eeeeee;
+
+    }
+    .bottom:hover {
+        cursor:pointer;
+        box-shadow: -2px -2px 3px 5px #eeeeee;
+    }
+
+    .imgDiv{
+        margin-top: 1%;
+        width: 150px;
+        height: 100px;
+    }
+    .contentDiv{
+        margin-top: 0.5%;
+        margin-left: 1%;
+        width: 700px;
+        height: 90px;
+        background-color: #ffffff;
+
+    }
+    .endDiv{
+        margin-top: 0.5%;
+        margin-left: 25%;
+        height: 70px;
+        width: 100px;
+        background-color: #ffffff
+    }
+    .span{
+        display: flex;
+        margin-left: 3%;
+        padding: 15px 20px 0 40px;
+        height: 60px;
+        width: 120px;
+    }
+    .li{
+        padding: 20px;
+        list-style: none;
+    }
+    .wz{
+        margin-top: 15%;
+    }
+    .picture{
+        width: 150px;
+        height: 100px;
+    }
+    .sp{
+        display: flex;
+        height: 50px;
+    }
+    .icon{
+        width: 100%;
+        height: 50px;
+        line-height: 60px;
+        display: flex;
+        background-color: #ffffff;
+    }
+    .tb{
+        width: 30px;
+        padding: 10px;
+        height: 30px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="top">
+		<span class="span">
+			<img src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/全站榜.png"/>
+			<em class="wz">全站榜</em>
+		</span>
+        <span class="span">
+			<img src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/原创榜.png"/>
+			<p class="wz">原创榜</p>
+		</span>
+        <span class="span">
+			<img src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/新番榜.png"/>
+			<p class="wz">新番榜</p>
+		</span>
+        <span class="span">
+			<img src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/影视榜.png"/>
+			<p class="wz">影视榜</p>
+		</span>
+        <span class="span">
+			<img src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/新人榜.png"/>
+			<p class="wz">新人榜</p>
+		</span>
+    </div>
+    <div class="center">
+        <li class="li"><em>全站</em></li>
+        <li  class="li"><em>动画</em></li>
+        <li  class="li"><em>国创相关</em></li>
+        <li  class="li"><em>音乐</em></li>
+        <li  class="li"><em>舞蹈</em></li>
+        <li  class="li"><em>游戏</em></li>
+        <li  class="li"><em>科技</em></li>
+        <li  class="li"><em>数码</em></li>
+        <li  class="li"><em>生活</em></li>
+        <li  class="li"><em>鬼畜</em></li>
+        <li  class="li"><em>时尚</em></li>
+        <li  class="li"><em>娱乐</em></li>
+    </div>
+    <div class="tiao"><p style="font-size: 14px;margin-top: 1%">统计所有投稿在 2020年03月25日 - 2020年03月28日 的数据综合得分，每日更新一次</p></div>
+    <div th:each="rank:${ranks}" class="bottom">
+        <h1 th:text="${rank.id}"></h1>
+        <div class="imgDiv">
+            <img class="picture" th:src="${rank.pic}"/>
+        </div>
+        <div class="contentDiv">
+            <p th:text="${rank.title}"></p>
+          <div class="icon">
+                <span  class="sp" style="margin-left: 3px;">
+				<img class="tb" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/20200328194902.png"/>
+			</span>
+              <span th:text="${rank.author}"></span>
+              <span class="sp" style="margin-left: 3px;">
+				<img class="tb" src="https://soft1851.oss-cn-beijing.aliyuncs.com/markdown/20200328194759.png"/>
+			</span>
+              <span th:text="${rank.duration}"></span>
+          </div>
+        </div>
+        <div class="endDiv">
+            <h1 th:text="${rank.id}"></h1>
+            <p>综合得分</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

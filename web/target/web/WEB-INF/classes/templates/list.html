@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>webJar</title>
+</head>
+<style>
+.container{
+    margin: 0 auto;
+    width: 70%;
+    height: 500px;
+    background-color: darkseagreen;
+}
+.top {
+    margin-top: 1%;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: darkseagreen;
+}
+    .center{
+        margin: 0 auto;
+        width: 70%;
+        height: 250px;
+        background-color: darkseagreen;
+    }
+   .bj{
+       width: 400px;
+       height: 450px;
+       display: flex;
+       flex-wrap: nowrap;
+       margin-left: -3.5%;
+   }
+</style>
+<body>
+<div class="container">
+    <div class="top">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">最受关注</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">虚构类»</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">非虚构类»</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">查看全部»</a>
+            </li>
+        </ul>
+    </div>
+<div class="center ">
+    <div class=" bj" style="width: 18rem;">
+        <div th:each="books:${bookList}" class="card-body">
+            <img th:src="${books.cover}" class="card-title"/>
+            <h6 th:text="${books.name}" class="card-subtitle mb-2 text-muted"></h6>
+            <p th:text="${books.introduction}" class="card-text"></p>
+            <a th:text="${books.type}" href="#" class="card-link"></a>
+            <a th:text="${books.author}" href="#" class="card-link"></a>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

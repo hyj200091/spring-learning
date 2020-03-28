@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>主页</title>
+</head>
+<body>
+<div>
+    <ul class="nav nav-pills" >
+        <li class="nav-item">
+            <a class="nav-link" href="#">新闻</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">网页</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">微信</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">知乎</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">图片</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">视频</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">名医</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">英文</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">问问</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">阅读</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">更多</a>
+        </li>
+    </ul>
+    <div class="row row-cols-1 row-cols-md-3">
+        <div th:each="book:${bookList}" class="col mb-4">
+            <div class="card h-100">
+                <img th:src="${book.cover}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 th:text="${book.name}" class="card-title">书名：</h5>
+                    <br>
+                    <p th:text="${book.introduction}" >简介：</p >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

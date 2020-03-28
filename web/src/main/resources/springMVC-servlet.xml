@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/mvc
-       http://www.springframework.org/schema/mvc/spring-mvc.xsd
-       http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd">
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:mvc="http://www.springframework.org/schema/mvc"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--       http://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--       http://www.springframework.org/schema/mvc-->
+<!--       http://www.springframework.org/schema/mvc/spring-mvc.xsd-->
+<!--       http://www.springframework.org/schema/context-->
+<!--       http://www.springframework.org/schema/context/spring-context.xsd">-->
 
 
-    <!--    启动mvc注解-->
-    <mvc:annotation-driven/>
-    <!--    扫描含有注解的包(控制器所在包)-->
-    <context:component-scan base-package="com.soft1851.spring.web.controller"/>
-    <!--    保证静态资源不被拦截-->
-<!--    <mvc:default-servlet-handler/>-->
-</beans>
+<!--&lt;!&ndash;    &lt;!&ndash;    启动mvc注解&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <mvc:annotation-driven/>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;    扫描含有注解的包(控制器所在包)&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <context:component-scan base-package="com.soft1851.spring.web.controller"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;    保证静态资源不被拦截&ndash;&gt;-->
+<!--&lt;!&ndash;    <mvc:default-servlet-handler/>&ndash;&gt;-->
+<!--</beans>-->
