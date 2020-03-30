@@ -23,13 +23,13 @@ import java.util.List;
  * @deprecated 云班课首页数据爬取
  * 解析HTML的方法
  */
-public class SubjectSpaider {
+public class JunShiSpaider {
     private static final Integer SUCCESS = 200;
-    public static List<Subject> getSubject(){
+    public static List<Subject> getJunShi(){
         List<Subject> subjects = new ArrayList<>();
         //目标地址
         String userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36";
-        String url = "https://mil.ifeng.com/shanklist/14-35083-";
+        String url = "https://www.zhihu.com/special/all";
         //创建response对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         try {
@@ -41,7 +41,7 @@ public class SubjectSpaider {
             CloseableHttpResponse response = httpClient.execute(httpGet, context);
             int statusCode = response.getStatusLine().getStatusCode();
             //看是否能够请求到页面200 OK
-            System.out.println(response.getStatusLine());
+            System.out.println(response.getStatusLine().getStatusCode());
             if(statusCode==SUCCESS){
                 HttpEntity entity=response.getEntity();
                 if(entity!=null){
@@ -50,8 +50,30 @@ public class SubjectSpaider {
                     Document document= Jsoup.parse(res);
                     Elements elements=document.getElementsByClass("news-stream-newsStream-news-item-has-image clearfix news_item");
                     //查看总长度
-                    System.out.println(elements.size());
+                    System.out.println("*********"+elements.size());
                     for(Element element:elements){
+                        //取得第二个div
+                        Element two = element.child(1);
+                        Element info = two.child(0).child(0).child(1);
+                        //图片
+                        Element img = element.child(0).child(0);
+                        String imgPicture = img.attr("src");
+                        //主题
+                        String  title = two.select("SpecialListCard-title").text();
+                        //取出时间
+                        String time = info.child(0).text();
+                        //取出次数
+                        String count = info.child(1).text();
+                        //取出内容
+                        String content = two.child(1).text();
+                        Subject subject = Subject.builder()
+                                .img(imgPicture)
+                                .title(title)
+                                .time(time)
+                                .count(count)
+                                .content(content).build();
+                        subjects.add(subject);
+                        System.out.println(subject);
                     }
                 }
             }
@@ -61,6 +83,6 @@ public class SubjectSpaider {
         return subjects;
     }
     public static void main(String[] args) {
-        getSubject();
+        getJunShi();
     }
 }
