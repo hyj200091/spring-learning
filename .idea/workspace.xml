@@ -11,30 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7ae43b9-f242-4405-9ccf-261688bfcb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/entity/Forum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/mapper/ForumMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/service/ForumService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/service/impl/ForumServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/resources/logback-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/resources/mappers/ForumMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/main/resources/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-xml/src/test/java/com/soft1851/spring/mybatis/service/ForumServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/b.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hyj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/soft1851/spring/web/entity/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/soft1851/spring/web/entity/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/soft1851/spring/web/spider/SubjectSpaider.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/soft1851/spring/web/spider/JunShiSpaider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/soft1851/spring/web/entity/Subject$SubjectBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/soft1851/spring/web/entity/Subject$SubjectBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/soft1851/spring/web/entity/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/soft1851/spring/web/entity/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/soft1851/spring/web/spider/SubjectSpaider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/mapper/ForumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/mapper/ForumMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/service/impl/ForumServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-xml/src/main/java/com/soft1851/spring/mybatis/service/impl/ForumServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-xml/src/main/resources/mappers/ForumMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-xml/src/main/resources/mappers/ForumMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +83,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -152,7 +133,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.13175231" />
     <property name="project.structure.side.proportion" value="0.32747254" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.24872579" />
   </component>
   <component name="RecentsManager">
@@ -408,7 +389,7 @@
       <workItem from="1585354999727" duration="22210000" />
       <workItem from="1585384484123" duration="17832000" />
       <workItem from="1585443712701" duration="8806000" />
-      <workItem from="1585571048731" duration="1501000" />
+      <workItem from="1585571048731" duration="3725000" />
     </task>
     <servers />
   </component>
@@ -544,10 +525,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="402" y="52" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585301376905" />
-    <state x="5" y="0" width="1141" height="680" key="SettingsEditor" timestamp="1585363951813">
+    <state x="5" y="0" width="1141" height="680" key="SettingsEditor" timestamp="1585574780229">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="5" y="0" width="1141" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585363951813" />
+    <state x="5" y="0" width="1141" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585574780229" />
     <state x="621" y="65" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585572404504">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
