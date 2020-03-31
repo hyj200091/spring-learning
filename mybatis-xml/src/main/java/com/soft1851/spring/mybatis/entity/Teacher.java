@@ -7,14 +7,18 @@ import lombok.NoArgsConstructor;
 
 /**
  * @Author: zw_w
- * @Date: 2020/3/30 19:19
+ * @Date: 2020/3/31 14:22
  * @Description:
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Forum {
-    private Integer forumId;
-    private String forumName;
+public class Teacher {
+    private Integer teacherId;
+    private String teacherName;
+    /**教师管理的班级id*/
+    private Integer clazzId;
+    /**一对一映射关系*/
+    private Clazz clazz;
 }

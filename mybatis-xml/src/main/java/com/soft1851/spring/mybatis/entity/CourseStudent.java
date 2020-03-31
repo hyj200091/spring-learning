@@ -6,15 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Author: zw_w
- * @Date: 2020/3/30 19:19
- * @Description:
- */
+ * @ClassName CourseStudent
+ * @Description TODO
+ * @Author hyj
+ * @Date 2020/3/31
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Forum {
-    private Integer forumId;
-    private String forumName;
+public class CourseStudent {
+    private Integer id;
+    private Integer courseId;
+    private Integer studentId;
 }

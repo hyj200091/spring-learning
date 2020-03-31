@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @Author: hyj
+ * @Author: zw_w
  * @Date: 2020/3/30 19:35
  * @Description:
  */
@@ -28,7 +28,7 @@ public class ForumServiceTest {
 
     @Test
     public void delete() {
-        forumService.delete(3);
+        forumService.delete(4);
     }
 
     @Test
@@ -45,7 +45,7 @@ public class ForumServiceTest {
 
     @Test
     public void selectForumById() {
-        Forum forum = forumService.selectForumById(6);
+        Forum forum = forumService.selectForumById(1);
         System.out.println(forum);
     }
 }

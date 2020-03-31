@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft1851.spring.mybatis.mapper.MatterMapper">
+<!--    多表指定条件查询（结合动态SQL）-->
+<!--    <select id="selectLimitFromTeacherInClassByDynamicSql" parameterType="MatterDto" resultType="MatterVo">-->
+<!--        SELECT t.teacher_name,c.clazz_name,s.student_name,s.hometown,s.birthday-->
+<!--        FROM t_teacher t,t_clazz c,t_student s-->
+<!--        WHERE t.clazz_id = c.clazz_id AND c.clazz_id = s.clazz_id-->
+<!--        <if test="teacherName != null and clazzName != null and studentName != null">-->
+<!--            AND teacher_name like "%"#{teacherName}"%"-->
+<!--            AND clazz_name like "%"#{clazzName}"%"-->
+<!--            AND student_name like "%"#{studentName}"%"-->
+<!--        </if>-->
+<!--    </select>-->
+    <select id="selectLimitFromTeacherInClassByDynamicSql" parameterType="MatterDto" resultType="MatterVo">
+        SELECT t.teacher_name,c.clazz_name,s.student_name,s.hometown,s.birthday
+        FROM t_teacher t,t_clazz c,t_student s
+        <where>
+        t.clazz_id = c.clazz_id AND c.clazz_id = s.clazz_id
+            <if test="teacherName != null and clazzName ! =null">
+                AND teacher_name like "%"#{teacherName}"%"
+                AND clazz_name like "%"#{clazzName}"%"
+            </if>
+            <if test="student.studentName ! =null">
+                AND student_name like "%"#{student.studentName}"%"
+            </if>
+            <if test="student.hometown ! =null">
+                AND student_hometown like "%"#{student.hometown}"%"
+            </if>
+            <if test="student.birthday ! =null">
+                AND student_birthday like "%"#{student.birthday}"%"
+            </if>
+        </where>
+    </select>
+</mapper>

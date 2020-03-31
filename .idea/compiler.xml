@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-xml" />
-        <module name="web" />
         <module name="Ioc" />
-        <module name="aop" />
+        <module name="web" />
         <module name="orm" />
+        <module name="aop" />
       </profile>
     </annotationProcessing>
   </component>
